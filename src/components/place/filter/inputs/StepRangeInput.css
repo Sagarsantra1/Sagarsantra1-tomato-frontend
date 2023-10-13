@@ -1,0 +1,43 @@
+
+.sliderticks {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.range{
+    width: 100%;
+}
+
+#steps-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 4px;
+    background: rgb(209 213 219);
+}
+
+/* Thumb: webkit */
+#steps-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: rgb(249 115 22);
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+/* Thumb: Firefox */
+#steps-range::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    background-color: rgb(249 115 22);
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}

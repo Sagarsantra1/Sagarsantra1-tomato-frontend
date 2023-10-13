@@ -1,0 +1,82 @@
+.double-range-container {
+    position: relative;
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.slider-track {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 15px;
+}
+
+.slider::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: rgb(249 115 22);
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+    pointer-events: auto;
+}
+
+/* Thumb: Firefox */
+.slider::-moz-range-thumb {
+    cursor: pointer;
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: rgb(249 115 22);
+    border-radius: 50%;
+    border: none;
+    pointer-events: auto;
+    transition: .2s ease-in-out;
+}
+.bubbleContainer{
+    position: relative;
+    background: #da6565;
+    width: 100%;
+}
+.bubble{
+    background-color: rgba(0, 0, 0, 0.84);
+    color: white;
+    font-size: small;
+    padding: 3px 5px;
+    width: fit-content;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.bubble::after{
+    content: "";
+    bottom: -5px;
+    left: 40%;
+    border-radius: 2px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.84);
+    transform: rotate(45deg);
+
+}
